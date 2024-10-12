@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bundle & Save</title>
+    <link rel="stylesheet" href="demo.css">
+</head>
+<body>
+    <form>
+        <div class="bundle-container">
+            <h2 style="color: aqua;">Bundle & Save</h2>
+            <div class="bundle-box" onmouseover="toggleOptions(this)">
+                <div class="bundle-info" style="display: inline-block; padding:5px">
+                    <input type="radio" name="bundle" id="bundle1" value="abc">
+                </div>
+                <div class="price" style="display: inline-block;">1 pair <br> DKK 195.00</div>
+                <div class="discount" style="position: relative;left:320px; bottom: 20px;"> 50% OFF</div>
+                <div class="options">
+                    <div class="pair-number">
+                        <label for="pair1">#1 Size</label>
+                        <select id="size1" name="size1">
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                        </select>
+                    </div>
+
+                    <label for="pair2">#2 Colour</label>
+                    <select id="color1" name="color1">
+                        <option value="Red">Red</option>
+                        <option value="Blue">Blue</option>
+                        <option value="Green">Green</option>
+                    </select>
+                </div>
+                <div class="options">
+                    <div class="pair-number">
+                        <label for="pair2">#2</label>
+                    </div>
+                    <select id="size2" name="size2">
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                    </select>
+                    <select id="color2" name="color2">
+                        <option value="color">Colour</option>
+                        <option value="Red">Red</option>
+                        <option value="Blue">Blue</option>
+                        <option value="Green">Green</option>
+                    </select>
+                </div>
+            </div>
+            <div class="bundle-box" onmouseover="toggleOptions(this)">
+                <div class="bundle-info" style="display: inline-block; padding:5px">
+                    <input type="radio" name="bundle" id="bundle2" value="abc">
+                </div>
+                <div class="price" style="display: inline-block;"> 2 pair <br> DKK 195.00</div>
+                <div class="discount" style="position: relative;left:320px; bottom: 25px;">Most Polular <br>40% OFF</div>
+                <div class="options">
+                    <div class="pair-number">
+                        <label for="pair1">#1 Size</label>
+                        <select id="size1" name="size1">
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                        </select>
+                    </div>
+
+                    <label for="pair2">#2 Colour</label>
+                    <select id="color1" name="color1">
+                        <option value="Red">Red</option>
+                        <option value="Blue">Blue</option>
+                        <option value="Green">Green</option>
+                    </select>
+                </div>
+                <div class="options">
+                    <div class="pair-number">
+                        <label for="pair2">#2</label>
+                    </div>
+                    <select id="size2" name="size2">
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                    </select>
+                    <select id="color2" name="color2">
+                        
+                        <option value="Red">Red</option>
+                        <option value="Blue">Blue</option>
+                        <option value="Green">Green</option>
+                    </select>
+                </div>
+            </div>
+            <div class="bundle-box" onmouseover="toggleOptions(this)">
+                <div class="bundle-info" style="display: inline-block; padding:5px">
+                    <input type="radio" name="bundle" id="bundle3" value="abc">
+                </div>
+                <div class="price" style="display: flex;">3 pair <br> DKK 195.00</div>
+                <div class="discount" style="position: relative;left:320px; bottom: 20px;">50% OFF</div>
+                <div class="bundle-container">
+                    <div class="options">
+                        <div class="pair-number">
+                          <label for="pair1">#1</label>
+                        </div>
+                        <select id="size1" name="size1">
+                          <option value="S">S</option>
+                          <option value="M">M</option>
+                          <option value="L">L</option>
+                        </select>
+                        <select id="color1" name="color1">
+                          <option value="color">Colour</option>
+                          <option value="Red">Red</option>
+                          <option value="Blue">Blue</option>
+                          <option value="Green">Green</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <footer class="footer">
+                <div class="footer-content">
+                  <span class="shipping">Free 2 Day Shipping</span>
+                  <span class="total">Total: DKK 360.00</span>
+                </div>
+              </footer>
+            
+            <button id="addToCart" onclick="addToCart()">+ Add to Cart</button>
+        </div>
+</body>
+<form>
+    <script src="demo.js"></script>
+    </body>
+</html>
